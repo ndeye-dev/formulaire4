@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+.container-form{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border: 1px solid black;
+}
+.formule{
+    display: flex;
+    margin: 3%;
+    padding: 0;
+}
+i{
+    position: relative;
+    right: 30px;
+    color: rgb(173, 17, 17);
+    font-size: 16px;
+}
+.green{
+    border: none;
+    border: 1px solid ;
+    color: rgb(40, 185, 40);
+}
+.red{
+    border: none;
+    border: 1px solid;
+    color: rgb(173, 17, 17);
+}
+.payement{
+   font-size: 11px;
+}
+.left, label{
+    font-size: 11px;
+    font-weight: bold;
+}
+input[type=radio]{
+    background-color:rbg(54 170 54);
+    font-size:12px;
+    font-family:arial;
+    }
+input{
+    margin: 3px;
+    padding: 5%;
+    outline: none;
+    padding-left: 60px;
+}
+.input1{
+    padding: 5%;
+    padding-left: 50px;
+}
+.lunch{
+    text-decoration: underline;
+    padding-left: 20%;
+    font-size: 10px;
+}
+.registre{
+    position: absolute;
+    bottom: 40%;
+    color: white;
+    font-weight: bold;
+    padding-left: 7%;
+}
+li{
+    margin-top: 10%;
+    font-size: 11px;
+}
+.container .progress-bar{
+    width: 180%;
+    height: 4px;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: gray;
+}
+.progress-bar .bar{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 53%;
+    border-radius: 6px;
+    background-color: rgb(54 170 54);
+    animation: progress 4s;
+}
+@keyframes progress {
+    0%{
+        width: 0;
+    }
+}
+.progress-bar .title{
+    position: absolute;
+    right: -14px;
+    top: -15px;
+    font-size: 12px;
+    background: rgb(54 170 54);
+    color: white;
+    padding: 2px 6px;
+}
+.title{
+    position: absolute;
+    left: 80%;
+}
+.white{
+    margin-left: 90%;
+    position: relative;
+    top: -20px;
+    border: 1px solid;
+    background-color: rgb(54 170 54);
+    padding: 3%;
+    color: white;
+    font-size: 12px;
+}
+button{
+    position: relative;
+    top: -3%;
+}
+.vert{
+    margin-left: 65%;
+    padding: 2%;
+    top: 10px;
+    color: white;
+    background-color: rgb(54 170 54);
+    border: none;
+}
+.bord{
+    border: 1px solid rgb(54 170 54);
+    top: 10px;
+    padding: 2%;
+    left: 2%;
+}
+@media screen and (max-width:700PX) {
+    .container-form{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        width: 300px;
+        height: 700px;
+        padding: 7px;
+        border: none;
+    }
+    .formule{
+        margin: 4%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    img{
+        margin: 0;
+        width: 250px;
+        height: 550px;
+
+    }
+    .registre{
+        position: relative;
+        bottom: 50%;
+        color: white;
+        font-weight: bold;
+        padding-left: 20%;
+    }
+    .container .progress-bar{
+        width: 75%;
+        height: 4px;
+        border-radius: 6px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        background: gray;
+    }
+    button{
+        position: relative;
+    }
+    .vert{
+        margin-left: 30%;
+        padding: 2%;
+        top: 10px;
+        color: white;
+        background-color: rgb(54 170 54);
+        border: none;
+    }
+}
